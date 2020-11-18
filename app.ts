@@ -1,5 +1,3 @@
-export {};
-
 console.log("Hello Typescript");
 
 function welcomePerson(person: Person):string {
