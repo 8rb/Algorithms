@@ -1,4 +1,4 @@
-This is my repo for Algorihtms and Date Structures in TypeScript! :o
+This is my repo for Algorithms and Data Structures in TypeScript! :o
 
 Some useful commands:
 
