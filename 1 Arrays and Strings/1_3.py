@@ -10,14 +10,31 @@
 
 def urlify(s, n):
     new_string = []
-    for i in range(n):
-        if(s[i] == " "):
+    for c in s:
+        if(c == " "):
             new_string.append("%20")
         else:
-            new_string.append(s[i])
+            new_string.append(c)
     return "".join(new_string)
 
 print(urlify("Mr John Smith", 13))
 
 # A different solution without using an extra 
 # string/list might be asked.
+
+# Since strings in Python are immutable, it's impossible to
+# Give a solution without using an extra list/string
+# Here's a second solution using an empty string instead of a list
+
+def urlify2(s, n):
+    new_string = ""
+    i = 0
+    while i != len(s):
+        if(s[i] != " "):
+            new_string+=s[i]
+        else:
+            new_string+="%20"
+        i+=1
+    return new_string
+
+# print(urlify2("Mr John Smith", 13))
